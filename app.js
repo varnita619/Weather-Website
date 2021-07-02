@@ -6,26 +6,6 @@ const weatherApi = {
    
 }
 
-// Geolocation Alert
-// const notificationElement = document.querySelector(".notification");
-
-// if("geolocation" in navigator){
-//     navigator.geolocation.getCurrentPosition( setPosition, showError);
-// }else{
-//     notificationElement.style.display = "block";
-//     notificationElement.innerHTML = "<p>Browser Doesn't Support Geolocation.</p>";
-// }
-
-// function setPosition(position){
-//     let latitude = position.coords.latitude;
-//     let longitude = position.coords.longitude;
-//     getWeatherReport(latitude,longitude);
-// }
-
-// function showError(error) {
-//     notificationElement.style.display = "block";
-//     notificationElement.innerHTML = `<p> ${error.message} </p>`;
-// }
 
 // Event Listener Function on keypress
 
@@ -73,10 +53,10 @@ function showWeatherReport(weather){
         document.body.style.backgroundImage = "url('images/clear.jpg')";
     
     } else if(weatherType.textContent == 'Clouds'){
-        document.body.style.backgroundImage = "url('images/cloud.jpg')";
+        document.body.style.backgroundImage = "url('images/cloud.jpeg')";
     
     } else if(weatherType.textContent == 'Rain'){
-        document.body.style.backgroundImage = "url('images/rainy.jpg')";
+        document.body.style.backgroundImage = "url('images/rain.jpg')";
     
     } else if(weatherType.textContent == 'Snow'){
         document.body.style.backgroundImage = "url('images/snow.jpg')";
@@ -85,7 +65,7 @@ function showWeatherReport(weather){
         document.body.style.backgroundImage = "url('images/thunderstorm.jpg')";
     
     } else if(weatherType.textContent == 'Haze'){
-        document.body.style.backgroundImage = "url('images/cloudy.jpg')";
+        document.body.style.backgroundImage = "url('images/cloudy.jpeg')";
     }  else if(weatherType.textContent == 'Mist'){
         document.body.style.backgroundImage = "url('images/mist.jpg')";
     } 
