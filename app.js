@@ -53,7 +53,7 @@ function showWeatherReport(weather){
         document.body.style.backgroundImage = "url('images/clear.jpg')";
     
     } else if(weatherType.textContent == 'Clouds'){
-        document.body.style.backgroundImage = "url('images/cloud.jpeg')";
+        document.body.style.backgroundImage = "url('images/cloud.jpg')";
     
     } else if(weatherType.textContent == 'Rain'){
         document.body.style.backgroundImage = "url('images/rain.jpg')";
@@ -65,7 +65,7 @@ function showWeatherReport(weather){
         document.body.style.backgroundImage = "url('images/thunderstorm.jpg')";
     
     } else if(weatherType.textContent == 'Haze'){
-        document.body.style.backgroundImage = "url('images/cloudy.jpeg')";
+        document.body.style.backgroundImage = "url('images/cloudy.jpg')";
     }  else if(weatherType.textContent == 'Mist'){
         document.body.style.backgroundImage = "url('images/mist.jpg')";
     } 
